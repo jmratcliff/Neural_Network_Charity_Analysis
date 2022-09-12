@@ -51,7 +51,7 @@ Classifications with less than 1,500 companies were put into an 'Other' category
 
 #### Encoding
 
-Categorical fields were then encoded utilizing OneHotEncoder
+Categorical fields were then identified and encoded utilizing OneHotEncoder
 
 ![cat_enc](/images/cat_encoded.png)
 
