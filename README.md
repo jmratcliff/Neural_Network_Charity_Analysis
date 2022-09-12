@@ -19,7 +19,7 @@ Data file contains 34,299 records/organizations with 12 columns of data:
 
 Fields with count of unique values:
 
-![file](/images/fields.png)
+![fields](/images/fields.png)
 
 #### Drop non-benefical columns
 
@@ -34,28 +34,37 @@ The remaining fields will be the features of the model with some additional prep
 APPLICATION_TYPE - 
 Application type value counts were fairly wide-spread with a number of application types only having a few records:
 
-![file](/images/app_values.png)
+![app](/images/app_values.png)
 
 Application types with less than 150 values were put into an 'Other' category:
 
-![file](/images/app_binned.png)
+![app_bin](/images/app_binned.png)
 
 CLASSIFICATION - 
 Classification unique value counts were fairly wide-spread with a number of application types only having a few records:
 
-![file](/images/class_values.png)
+![class](/images/class_values.png)
 
 Classifications with less than 1,500 companies were put into an 'Other' category:
 
-![file](/images/class_binned.png)
+![class_bin](/images/class_binned.png)
 
 #### Encoding
 
 Categorical fields were then encoded utilizing OneHotEncoder
 
-![file](/images/cat_encoded.png)
+![cat_enc](/images/cat_encoded.png)
 
 
 ### Compiling, Training and Evaluating Models
+
+Model was initially set up with two hidden layers (8 and 5 neurons) with Relu activation function and an output layer with a Sigmoid activation function.
+
+![model1](/images/model1.png)
+
+The model target performance goal was an *Accuracy = 80%* which the intial model did NOT meet.
+
+![model1](/images/model1_results.png)
+
 
 
