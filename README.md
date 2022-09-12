@@ -64,7 +64,57 @@ Model was initially set up with two hidden layers (8 and 5 neurons) with Relu ac
 
 The model target performance goal was an *Accuracy = 80%* which the intial model did NOT meet.
 
-![model1](/images/model1_results.png)
+![model1r](/images/model1_result.png)
+
+#### Model Optimization
+
+***Model 2***
+* STATUS field dropped
+* Application_type and Classification fields binned slightly differently
+* Neurons increased to 10 with an additional hidden layer
+
+![model2](/images/model2.png)
+
+Results were similar to original model:
+
+![model2r](/images/model2_result.png)
+
+***Model 3***
+* hidden layer activation functions changed to Tanh
+
+![model3](/images/model3.png)
+
+Results were similar to original model:
+
+![model3r](/images/model3_result.png)
+
+***Model 4***
+* Hidden layer activation functions changed to Sigmoid
+* Output layer activation function changed to Relu
+
+![model4](/images/model4.png)
+
+Results were similar to original model:
+
+![model4r](/images/model4_result.png)
+
+***Model 5***
+* STATUS and ASK_AMT fields dropped from input features
+* Output layer activation function changed to Relu
+
+![model5](/images/model5.png)
+
+Results were similar to original model:
+
+![model5r](/images/model5_result.png)
 
 
+## Summary
 
+The neural network model is fairly successful in predicting the success of an organization with an average ***73% accuracy.***
+This model framework does not meet the target goal of ***80% accuracy.***
+The neural network model had a high number of categorical values and was unable to identify pertinent variables in order to meet the accuracy goal.
+
+#### Recommendation:
+
+Due to the high number of categorical values and input fields - utilize an ***EasyEnsembleClassifier supervised machine learning model***
