@@ -40,3 +40,22 @@ Application types with less than 150 values were put into an 'Other' category:
 
 ![file](/images/app_binned.png)
 
+CLASSIFICATION - 
+Classification unique value counts were fairly wide-spread with a number of application types only having a few records:
+
+![file](/images/class_values.png)
+
+Classifications with less than 1,500 companies were put into an 'Other' category:
+
+![file](/images/class_binned.png)
+
+#### Encoding
+
+Categorical fields were then encoded utilizing OneHotEncoder
+
+![file](/images/cat_encoded.png)
+
+
+### Compiling, Training and Evaluating Models
+
+
